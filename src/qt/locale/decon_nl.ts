@@ -835,8 +835,8 @@
         <translation>Deze label wordt rood als een ontvanger een hoeveelheid kleiner dan de huidige dust-drempel krijgt.</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 duff(s) per input.</source>
-        <translation>Kan +/- %1 duff(s) per invoer variëren.</translation>
+        <source>Can vary +/- %1 dust(s) per input.</source>
+        <translation>Kan +/- %1 dust(s) per invoer variëren.</translation>
     </message>
     <message>
         <source>(no label)</source>

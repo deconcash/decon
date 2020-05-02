@@ -1057,8 +1057,8 @@
     </message>
     <message>
         <location line="+5"/>
-        <source>Can vary +/- %1 duff(s) per input.</source>
-        <translation>Can vary +/- %1 duff(s) per input.</translation>
+        <source>Can vary +/- %1 dust(s) per input.</source>
+        <translation>Can vary +/- %1 dust(s) per input.</translation>
     </message>
     <message>
         <location line="+41"/>

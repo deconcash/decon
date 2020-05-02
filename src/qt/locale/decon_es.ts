@@ -835,8 +835,8 @@
         <translation>Esta etiqueta se vuelve roja si cualquier receptor recibe una cantidad mas pequeña que el límite, mínimo actual de polvo.</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 duff(s) per input.</source>
-        <translation>Puede variar +/- %1 duff(s) por entrada.</translation>
+        <source>Can vary +/- %1 dust(s) per input.</source>
+        <translation>Puede variar +/- %1 dust(s) por entrada.</translation>
     </message>
     <message>
         <source>(no label)</source>

@@ -807,8 +807,8 @@
         <translation>受取額が現在のダスト閾値を下回る場合にはこのラベルは赤くなります。</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 duff(s) per input.</source>
-        <translation>インプットごとに +/- %1 duff(s) が変更可能 </translation>
+        <source>Can vary +/- %1 dust(s) per input.</source>
+        <translation>インプットごとに +/- %1 dust(s) が変更可能 </translation>
     </message>
     <message>
         <source>(no label)</source>
