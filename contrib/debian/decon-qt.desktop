@@ -1,0 +1,13 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Decon Core
+Comment=Decon P2P Cryptocurrency
+Comment[de]=Verbinde mit dem Decon peer-to-peer Netzwerk
+Comment[fr]=Decon, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Decon, eşten eşe kriptografik sanal para birimi
+Exec=decon-qt %u
+Terminal=false
+Type=Application
+Icon=decon128
+MimeType=x-scheme-handler/decon;
+Categories=Office;Finance;

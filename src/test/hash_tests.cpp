@@ -4,7 +4,7 @@
 
 #include "hash.h"
 #include "utilstrencodings.h"
-#include "test/test_dash.h"
+#include "test/test_decon.h"
 
 #include <vector>
 
@@ -79,7 +79,7 @@ uint64_t siphash_4_2_testvec[] = {
 
 BOOST_AUTO_TEST_CASE(siphash)
 {
-    CSipHasher hasher(0x0706050403020100ULL, 0x0F0E0D0C0B0A0908ULL);
+    CSipHasher hasher(0x0706099993020100ULL, 0x0F0E0D0C0B0A0908ULL);
     BOOST_CHECK_EQUAL(hasher.Finalize(),  0x726fdb47dd0e0e31ull);
     static const unsigned char t0[1] = {0};
     hasher.Write(t0, 1);
@@ -103,17 +103,17 @@ BOOST_AUTO_TEST_CASE(siphash)
     hasher.Write(0x2F2E2D2C2B2A2928ULL);
     BOOST_CHECK_EQUAL(hasher.Finalize(),  0xe612a3cb9ecba951ull);
 
-    BOOST_CHECK_EQUAL(SipHashUint256(0x0706050403020100ULL, 0x0F0E0D0C0B0A0908ULL, uint256S("1f1e1d1c1b1a191817161514131211100f0e0d0c0b0a09080706050403020100")), 0x7127512f72f27cceull);
+    BOOST_CHECK_EQUAL(SipHashUint256(0x0706099993020100ULL, 0x0F0E0D0C0B0A0908ULL, uint256S("1f1e1d1c1b1a191817161514131211100f0e0d0c0b0a09080706050403020100")), 0x7127512f72f27cceull);
 
     // Check test vectors from spec, one byte at a time
-    CSipHasher hasher2(0x0706050403020100ULL, 0x0F0E0D0C0B0A0908ULL);
+    CSipHasher hasher2(0x0706099993020100ULL, 0x0F0E0D0C0B0A0908ULL);
     for (uint8_t x=0; x<ARRAYLEN(siphash_4_2_testvec); ++x)
     {
         BOOST_CHECK_EQUAL(hasher2.Finalize(), siphash_4_2_testvec[x]);
         hasher2.Write(&x, 1);
     }
     // Check test vectors from spec, eight bytes at a time
-    CSipHasher hasher3(0x0706050403020100ULL, 0x0F0E0D0C0B0A0908ULL);
+    CSipHasher hasher3(0x0706099993020100ULL, 0x0F0E0D0C0B0A0908ULL);
     for (uint8_t x=0; x<ARRAYLEN(siphash_4_2_testvec); x+=8)
     {
         BOOST_CHECK_EQUAL(hasher3.Finalize(), siphash_4_2_testvec[x]);

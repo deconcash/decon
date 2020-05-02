@@ -1,0 +1,6 @@
+usr/local/bin/decon-qt usr/bin
+share/pixmaps/decon32.xpm usr/share/pixmaps
+share/pixmaps/decon16.xpm usr/share/pixmaps
+share/pixmaps/decon128.png usr/share/pixmaps
+debian/decon-qt.desktop usr/share/applications
+debian/decon-qt.protocol usr/share/kde4/services/

@@ -1,0 +1,22 @@
+[Unit]
+Description=Decon's distributed currency daemon
+After=network.target
+
+[Service]
+User=deconcore
+Group=deconcore
+
+Type=forking
+PIDFile=/var/lib/decond/decond.pid
+ExecStart=/usr/bin/decond -daemon -pid=/var/lib/decond/decond.pid \
+-conf=/etc/deconcore/decon.conf -datadir=/var/lib/decond -disablewallet
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

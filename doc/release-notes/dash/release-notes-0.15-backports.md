@@ -3,7 +3,7 @@
 - [`697d289eb`](https://github.com/dashpay/dash/commit/697d289eb) Merge #12392: Fix ignoring tx data requests when fPauseSend is set on a peer (#3225)
 - [`8c17c8163`](https://github.com/dashpay/dash/commit/8c17c8163) Remove light-hires theme as it's not required anymore
 - [`d9741fc63`](https://github.com/dashpay/dash/commit/d9741fc63) Merge #16254: qt: Set AA_EnableHighDpiScaling attribute early
-- [`df04cdcd2`](https://github.com/dashpay/dash/commit/df04cdcd2) Fix Dash specific docs and scripts
+- [`df04cdcd2`](https://github.com/dashpay/dash/commit/df04cdcd2) Fix dash specific docs and scripts
 - [`1ef70ac9e`](https://github.com/dashpay/dash/commit/1ef70ac9e) Merge #12607: depends: Remove ccache
 - [`5107582f2`](https://github.com/dashpay/dash/commit/5107582f2) Merge #11252: [P2P] When clearing addrman clear mapInfo and mapAddr. (#3171)
 - [`cf632029b`](https://github.com/dashpay/dash/commit/cf632029b) Merge #12804: [tests] Fix intermittent rpc_net.py failure.
@@ -24,15 +24,15 @@
 - [`8bcba5d4e`](https://github.com/dashpay/dash/commit/8bcba5d4e) Merge #8498: Near-Bugfix: Optimization: Minimize the number of times it is checked that no money...
 - [`ed65d5126`](https://github.com/dashpay/dash/commit/ed65d5126) Merge #13003: qa: Add test for orphan handling
 - [`3e72a09c1`](https://github.com/dashpay/dash/commit/3e72a09c1) Merge #11772: [tests] Change invalidblockrequest to use BitcoinTestFramework
-- [`573d1da16`](https://github.com/dashpay/dash/commit/573d1da16) Use NodeConnCB as base for P2PDataStore
+- [`573d1da16`](https://github.com/dashpay/dash/commit/573d1da16) Use NodashnCB as base for P2PDataStore
 - [`01c138e86`](https://github.com/dashpay/dash/commit/01c138e86) Merge #11771: [tests] Change invalidtxrequest to use BitcoinTestFramework
 - [`f4ea83674`](https://github.com/dashpay/dash/commit/f4ea83674) Merge #11849: [tests] Assert that only one NetworkThread exists
-- [`6e6e950fc`](https://github.com/dashpay/dash/commit/6e6e950fc) Merge #11641: qa: Only allow disconnecting all NodeConns
+- [`6e6e950fc`](https://github.com/dashpay/dash/commit/6e6e950fc) Merge #11641: qa: Only allow disconnecting all Nodashns
 - [`7c163b1ff`](https://github.com/dashpay/dash/commit/7c163b1ff) Merge #11182: [tests] Add P2P interface to TestNode
 - [`bdfc303d2`](https://github.com/dashpay/dash/commit/bdfc303d2) Temporarily remove arguments to BENCHMARK
 - [`2be67c760`](https://github.com/dashpay/dash/commit/2be67c760) Merge #12324: speed up Unserialize_impl for prevector
 - [`595826ad6`](https://github.com/dashpay/dash/commit/595826ad6) Merge #12549: Make prevector::resize() and other prevector operations much faster
-- [`a1bd147bc`](https://github.com/dashpay/dash/commit/a1bd147bc) Dashify
+- [`a1bd147bc`](https://github.com/dashpay/dash/commit/a1bd147bc) dashify
 - [`f7b71f660`](https://github.com/dashpay/dash/commit/f7b71f660) Merge #13611: [bugfix] Use `__cpuid_count` for gnu C to avoid gitian build fail.
 - [`4bfc6ab30`](https://github.com/dashpay/dash/commit/4bfc6ab30) Merge #13788: Fix --disable-asm for newer assembly checks/code
 - [`1b2252c28`](https://github.com/dashpay/dash/commit/1b2252c28) Merge #13386: SHA256 implementations based on Intel SHA Extensions
@@ -81,7 +81,7 @@
 - [`58a946c6b`](https://github.com/dashpay/dash/commit/58a946c6b) [tests] do not allow assert_raises_message to be called with JSONRPCException
 - [`3602d3139`](https://github.com/dashpay/dash/commit/3602d3139) [tests] remove direct testing on JSONRPCException from individual test cases
 - [`297e9a018`](https://github.com/dashpay/dash/commit/297e9a018) Remove more SegWit related tests from script_standard_tests.cpp
-- [`f76d53d73`](https://github.com/dashpay/dash/commit/f76d53d73) Dashify a few strings in tests
+- [`f76d53d73`](https://github.com/dashpay/dash/commit/f76d53d73) dashify a few strings in tests
 - [`4770830bb`](https://github.com/dashpay/dash/commit/4770830bb) Drop accidently added lines in release-notes.md
 - [`1c65e0859`](https://github.com/dashpay/dash/commit/1c65e0859) Fix "os" import in wallet-dump.py
 - [`f61698937`](https://github.com/dashpay/dash/commit/f61698937) Merge #11483: Fix importmulti bug when importing an already imported key
@@ -126,7 +126,7 @@
 - [`ec892d459`](https://github.com/dashpay/dash/commit/ec892d459) Merge #11234: Remove redundant testutil.cpp|h files
 - [`d643ada80`](https://github.com/dashpay/dash/commit/d643ada80) Merge #11241: [tests] Improve signmessages functional test
 - [`b9ce8480d`](https://github.com/dashpay/dash/commit/b9ce8480d) Merge #11215: [tests] fixups from set_test_params()
-- [`a304d4d47`](https://github.com/dashpay/dash/commit/a304d4d47) Fix DashTestFramework and tests depending on it
+- [`a304d4d47`](https://github.com/dashpay/dash/commit/a304d4d47) Fix dashTestFramework and tests depending on it
 - [`ac0f483d8`](https://github.com/dashpay/dash/commit/ac0f483d8) Fix issues with set_test_params and start/stop_node
 - [`703f4c77a`](https://github.com/dashpay/dash/commit/703f4c77a) Fix stderr related issues
 - [`39a1c6452`](https://github.com/dashpay/dash/commit/39a1c6452) Allow to set self.stderr when using vanilla setup_nodes()
@@ -135,16 +135,16 @@
 - [`17bb230d7`](https://github.com/dashpay/dash/commit/17bb230d7) Merge #11121: TestNode tidyups
 - [`37250c02e`](https://github.com/dashpay/dash/commit/37250c02e) Merge #11150: [tests] Add getmininginfo test
 - [`74325db11`](https://github.com/dashpay/dash/commit/74325db11) Merge #10859: RPC: gettxout: Slightly improve doc and tests
-- [`ebfec2218`](https://github.com/dashpay/dash/commit/ebfec2218) Dashify BITCOINCLI
+- [`ebfec2218`](https://github.com/dashpay/dash/commit/ebfec2218) dashify BITCOINCLI
 - [`1adc2001a`](https://github.com/dashpay/dash/commit/1adc2001a) Merge #10798: [tests] [utils] test bitcoin-cli
 - [`1b77cc81a`](https://github.com/dashpay/dash/commit/1b77cc81a) No need to assert wait_until
 - [`956e6bc01`](https://github.com/dashpay/dash/commit/956e6bc01) Merge #11068: qa: Move wait_until to util
 - [`d09f88d98`](https://github.com/dashpay/dash/commit/d09f88d98) Merge #11077: [tests] fix timeout issues from TestNode
 - [`0a8ad8b56`](https://github.com/dashpay/dash/commit/0a8ad8b56) Merge #11091: test: Increase initial RPC timeout to 60 seconds
 - [`1596b1dfa`](https://github.com/dashpay/dash/commit/1596b1dfa) Move -createwalletbackups=0 into test_node.py
-- [`4049754f4`](https://github.com/dashpay/dash/commit/4049754f4) Dashify test_node.py
+- [`4049754f4`](https://github.com/dashpay/dash/commit/4049754f4) dashify test_node.py
 - [`96966e5b8`](https://github.com/dashpay/dash/commit/96966e5b8) Use TestNode.node_encrypt_wallet
-- [`cc124c99c`](https://github.com/dashpay/dash/commit/cc124c99c) Remove Dash specific leftovers of node.stop optimization
+- [`cc124c99c`](https://github.com/dashpay/dash/commit/cc124c99c) Remove dash specific leftovers of node.stop optimization
 - [`f55da3aa5`](https://github.com/dashpay/dash/commit/f55da3aa5) Merge #10711: [tests] Introduce TestNode
 - [`f7a679062`](https://github.com/dashpay/dash/commit/f7a679062) Merge #10854: Avoid using sizes on non-fixed-width types to derive protocol constants.
 - [`3eb0e1463`](https://github.com/dashpay/dash/commit/3eb0e1463) Fix rawtransaction.py test
@@ -231,7 +231,7 @@
 - [`cd30d6b44`](https://github.com/dashpay/dash/commit/cd30d6b44) simplify `stop_node`
 - [`a67f5375f`](https://github.com/dashpay/dash/commit/a67f5375f) remove duplicate import
 - [`3980caf20`](https://github.com/dashpay/dash/commit/3980caf20) re-add import shutil
-- [`cb480af01`](https://github.com/dashpay/dash/commit/cb480af01) Dashify
+- [`cb480af01`](https://github.com/dashpay/dash/commit/cb480af01) dashify
 - [`806da3c6e`](https://github.com/dashpay/dash/commit/806da3c6e) adjust number of parameters in sendmany
 - [`c4094c8de`](https://github.com/dashpay/dash/commit/c4094c8de) Few more tiny trivial fixes
 - [`8c2c2a1ad`](https://github.com/dashpay/dash/commit/8c2c2a1ad) s/bitcoind/dashd/ in some places
@@ -346,7 +346,7 @@
 - [`7e4318dda`](https://github.com/dashpay/dash/commit/7e4318dda) Merge bitcoin#8329: Consensus: MOVEONLY: Move functions for tx verification (#3030)
 - [`a4f046cd0`](https://github.com/dashpay/dash/commit/a4f046cd0) adjust formatting from review configure.ac
 - [`0eae9ed90`](https://github.com/dashpay/dash/commit/0eae9ed90) remove witness comment/text
-- [`2b9216e98`](https://github.com/dashpay/dash/commit/2b9216e98) /s/BTC/DASH
+- [`2b9216e98`](https://github.com/dashpay/dash/commit/2b9216e98) /s/BTC/dash
 - [`188f4a752`](https://github.com/dashpay/dash/commit/188f4a752) Merge #10735: Avoid static analyzer warnings regarding uninitialized arguments
 - [`c097ab84d`](https://github.com/dashpay/dash/commit/c097ab84d) Merge #10840: Remove duplicate include
 - [`d7057d429`](https://github.com/dashpay/dash/commit/d7057d429) Merge #10766: Building Environment: Set ARFLAGS to cr
@@ -597,7 +597,7 @@
 - [`5152e751c`](https://github.com/dashpay/dash/commit/5152e751c) Notify UI/external scripts about wallet txes locks
 - [`dfabead29`](https://github.com/dashpay/dash/commit/dfabead29) Merge #10264: [test] Add tests for getconnectioncount, getnettotals and ping
 - [`4daceb9fe`](https://github.com/dashpay/dash/commit/4daceb9fe) Merge #10224: [test] Add test for getaddednodeinfo
-- [`05139e3eb`](https://github.com/dashpay/dash/commit/05139e3eb) remove MyNodeConnCB Class and references
+- [`05139e3eb`](https://github.com/dashpay/dash/commit/05139e3eb) remove MyNodashnCB Class and references
 - [`2d771c95a`](https://github.com/dashpay/dash/commit/2d771c95a) Merge #10169: [tests] Remove func test code duplication
 - [`146cae956`](https://github.com/dashpay/dash/commit/146cae956) Merge #10234: [net] listbanned RPC and QT should show correct banned subnets
 - [`ed71579cc`](https://github.com/dashpay/dash/commit/ed71579cc) Merge #10093: [Qt] Don't add arguments of sensitive command to console window
@@ -680,7 +680,7 @@
 - [`c37008a45`](https://github.com/dashpay/dash/commit/c37008a45) update dip4-coinbasemerkalroots.py and llmq-is-cl-conflicts.py
 - [`7fd979cc0`](https://github.com/dashpay/dash/commit/7fd979cc0) Merge #10114: [tests] sync_with_ping should assert that ping hasn't timed out
 - [`4121daba2`](https://github.com/dashpay/dash/commit/4121daba2) Merge #10098: Make qt wallet test compatible with qt4
-- [`cc06ef551`](https://github.com/dashpay/dash/commit/cc06ef551) Merge #10109: Remove SingleNodeConnCB
+- [`cc06ef551`](https://github.com/dashpay/dash/commit/cc06ef551) Merge #10109: Remove SingleNodashnCB
 - [`94aa904c0`](https://github.com/dashpay/dash/commit/94aa904c0) Merge #10107: Remove unused variable. Remove accidental trailing semicolons in Python code
 - [`404e244d1`](https://github.com/dashpay/dash/commit/404e244d1) Merge #10088: Trivial: move several relay options into the relay help group
 - [`05cb5a058`](https://github.com/dashpay/dash/commit/05cb5a058) Merge #10108: ApproximateBestSubset should take inputs by reference, not value

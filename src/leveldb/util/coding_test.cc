@@ -62,7 +62,7 @@ TEST(Coding, EncodingOutput) {
   ASSERT_EQ(0x04, static_cast<int>(dst[3]));
 
   dst.clear();
-  PutFixed64(&dst, 0x0807060504030201ull);
+  PutFixed64(&dst, 0x0807060999930201ull);
   ASSERT_EQ(8, dst.size());
   ASSERT_EQ(0x01, static_cast<int>(dst[0]));
   ASSERT_EQ(0x02, static_cast<int>(dst[1]));

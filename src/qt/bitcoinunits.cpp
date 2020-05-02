@@ -19,10 +19,10 @@ BitcoinUnits::BitcoinUnits(QObject *parent):
 QList<BitcoinUnits::Unit> BitcoinUnits::availableUnits()
 {
     QList<BitcoinUnits::Unit> unitlist;
-    unitlist.append(DASH);
-    unitlist.append(mDASH);
-    unitlist.append(uDASH);
-    unitlist.append(duffs);
+    unitlist.append(DECON);
+    unitlist.append(mDECON);
+    unitlist.append(uDECON);
+    unitlist.append(dusts);
     return unitlist;
 }
 
@@ -30,10 +30,10 @@ bool BitcoinUnits::valid(int unit)
 {
     switch(unit)
     {
-    case DASH:
-    case mDASH:
-    case uDASH:
-    case duffs:
+    case DECON:
+    case mDECON:
+    case uDECON:
+    case dusts:
         return true;
     default:
         return false;
@@ -46,10 +46,10 @@ QString BitcoinUnits::name(int unit)
     {
         switch(unit)
         {
-            case DASH: return QString("DASH");
-            case mDASH: return QString("mDASH");
-            case uDASH: return QString::fromUtf8("μDASH");
-            case duffs: return QString("duffs");
+            case DECON: return QString("DECON");
+            case mDECON: return QString("mDECON");
+            case uDECON: return QString::fromUtf8("μDECON");
+            case dusts: return QString("dusts");
             default: return QString("???");
         }
     }
@@ -57,10 +57,10 @@ QString BitcoinUnits::name(int unit)
     {
         switch(unit)
         {
-            case DASH: return QString("tDASH");
-            case mDASH: return QString("mtDASH");
-            case uDASH: return QString::fromUtf8("μtDASH");
-            case duffs: return QString("tduffs");
+            case DECON: return QString("tDECON");
+            case mDECON: return QString("mtDECON");
+            case uDECON: return QString::fromUtf8("μtDECON");
+            case dusts: return QString("tdusts");
             default: return QString("???");
         }
     }
@@ -72,10 +72,10 @@ QString BitcoinUnits::description(int unit)
     {
         switch(unit)
         {
-            case DASH: return QString("Dash");
-            case mDASH: return QString("Milli-Dash (1 / 1" THIN_SP_UTF8 "000)");
-            case uDASH: return QString("Micro-Dash (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
-            case duffs: return QString("Ten Nano-Dash (1 / 100" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+            case DECON: return QString("Decon");
+            case mDECON: return QString("Milli-Decon (1 / 1" THIN_SP_UTF8 "000)");
+            case uDECON: return QString("Micro-Decon (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+            case dusts: return QString("Ten Nano-Decon (1 / 100" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
             default: return QString("???");
         }
     }
@@ -83,10 +83,10 @@ QString BitcoinUnits::description(int unit)
     {
         switch(unit)
         {
-            case DASH: return QString("TestDashs");
-            case mDASH: return QString("Milli-TestDash (1 / 1" THIN_SP_UTF8 "000)");
-            case uDASH: return QString("Micro-TestDash (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
-            case duffs: return QString("Ten Nano-TestDash (1 / 100" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+            case DECON: return QString("TestDecons");
+            case mDECON: return QString("Milli-TestDecon (1 / 1" THIN_SP_UTF8 "000)");
+            case uDECON: return QString("Micro-TestDecon (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+            case dusts: return QString("Ten Nano-TestDecon (1 / 100" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
             default: return QString("???");
         }
     }
@@ -96,10 +96,10 @@ qint64 BitcoinUnits::factor(int unit)
 {
     switch(unit)
     {
-    case DASH:  return 100000000;
-    case mDASH: return 100000;
-    case uDASH: return 100;
-    case duffs: return 1;
+    case DECON:  return 100000000;
+    case mDECON: return 100000;
+    case uDECON: return 100;
+    case dusts: return 1;
     default:   return 100000000;
     }
 }
@@ -108,10 +108,10 @@ int BitcoinUnits::decimals(int unit)
 {
     switch(unit)
     {
-    case DASH: return 8;
-    case mDASH: return 5;
-    case uDASH: return 2;
-    case duffs: return 0;
+    case DECON: return 8;
+    case mDECON: return 5;
+    case uDECON: return 2;
+    case dusts: return 0;
     default: return 0;
     }
 }
