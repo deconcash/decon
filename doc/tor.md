@@ -52,11 +52,11 @@ reachable from the Tor network. Add these lines to your /etc/tor/torrc (or equiv
 config file):
 
 	HiddenServiceDir /var/lib/tor/deconcore-service/
-	HiddenServicePort5040127.0.0.1:5040
-	HiddenServicePort5041127.0.0.15041
+	HiddenServicePort 5040 127.0.0.1:5040 
+	HiddenServicePort 5041 127.0.0.1:5041
 
 The directory can be different of course, but (both) port numbers should be equal to
-your decond's P2P listen port 5040by default).
+your decond's P2P listen port 5040 by default).
 
 	-externalip=X   You can tell Decon Core about its publicly reachable address using
 	                this option, and this can be a .onion address. Given the above
@@ -91,7 +91,7 @@ as well, use `discover` instead:
 
 	./decond ... -discover
 
-and open port5040on your firewall (or use -upnp).
+and open port 5040 on your firewall (or use -upnp).
 
 If you only want to use Tor to reach onion addresses, but not use it as a proxy
 for normal IPv4/IPv6 communication, use:

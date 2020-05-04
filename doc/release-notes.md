@@ -127,7 +127,7 @@ or higher.
 Changes in regtest and devnet p2p/rpc ports
 -------------------------------------------
 Default p2p and rpc ports for devnets and regtest were changed to ensure their consistency and to avoid
-any potential interference with bitcoin's regtests. New default p2p/rpc ports for devnet are544119798,
+any potential interference with bitcoin's regtests. New default p2p/rpc ports for devnet are 5441 19798,
 for regtest - 19899/19898 respectively.
 
 ZMQ changes

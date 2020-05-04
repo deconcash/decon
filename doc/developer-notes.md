@@ -173,7 +173,7 @@ Threads
 
 - ThreadMapPort : Universal plug-and-play startup/shutdown
 
-- ThreadSocketHandler : Sends/Receives data from peers on port5040
+- ThreadSocketHandler : Sends/Receives data from peers on port 5040
 
 - ThreadOpenAddedConnections : Opens network connections to added nodes.
 
