@@ -277,7 +277,7 @@ BOOST_AUTO_TEST_CASE(addrman_find)
     BOOST_CHECK_EQUAL(addrman.size(), 0);
 
     CAddress addr1 = CAddress(ResolveService("250.1.2.1", 8333), NODE_NONE);
-    CAddress addr2 = CAddress(ResolveService("250.1.2.1",5040, NODE_NONE);
+    CAddress addr2 = CAddress(ResolveService("250.1.2.1", 5040), NODE_NONE);
     CAddress addr3 = CAddress(ResolveService("251.255.2.1", 8333), NODE_NONE);
 
     CNetAddr source1 = ResolveIP("250.1.2.1");
@@ -355,7 +355,7 @@ BOOST_AUTO_TEST_CASE(addrman_getaddr)
 
     CAddress addr1 = CAddress(ResolveService("250.250.2.1", 8333), NODE_NONE);
     addr1.nTime = GetAdjustedTime(); // Set time so isTerrible = false
-    CAddress addr2 = CAddress(ResolveService("250.251.2.2",5040, NODE_NONE);
+    CAddress addr2 = CAddress(ResolveService("250.251.2.2", 5040), NODE_NONE);
     addr2.nTime = GetAdjustedTime();
     CAddress addr3 = CAddress(ResolveService("251.252.2.3", 8333), NODE_NONE);
     addr3.nTime = GetAdjustedTime();
@@ -409,7 +409,7 @@ BOOST_AUTO_TEST_CASE(caddrinfo_get_tried_bucket)
     CAddrManTest addrman;
 
     CAddress addr1 = CAddress(ResolveService("250.1.1.1", 8333), NODE_NONE);
-    CAddress addr2 = CAddress(ResolveService("250.1.1.1",5040, NODE_NONE);
+    CAddress addr2 = CAddress(ResolveService("250.1.1.1", 5040), NODE_NONE);
 
     CNetAddr source1 = ResolveIP("250.1.1.1");
 
@@ -463,7 +463,7 @@ BOOST_AUTO_TEST_CASE(caddrinfo_get_new_bucket)
     CAddrManTest addrman;
 
     CAddress addr1 = CAddress(ResolveService("250.1.2.1", 8333), NODE_NONE);
-    CAddress addr2 = CAddress(ResolveService("250.1.2.1",5040, NODE_NONE);
+    CAddress addr2 = CAddress(ResolveService("250.1.2.1", 5040), NODE_NONE);
 
     CNetAddr source1 = ResolveIP("250.1.2.1");
 
